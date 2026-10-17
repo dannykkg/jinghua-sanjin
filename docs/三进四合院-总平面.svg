@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="1260" viewBox="0 0 700 1260" font-family="Songti SC, Noto Serif SC, SimSun, serif">
+<defs>
+  <pattern id="tile" width="12" height="12" patternUnits="userSpaceOnUse"><rect width="12" height="12" fill="#dfe1dc"/><path d="M0 12L12 0" stroke="#c8cbc5" stroke-width="0.7"/></pattern>
+  <pattern id="path" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#efe9d8"/><path d="M0 14L14 0" stroke="#ded5c0" stroke-width="0.6"/></pattern>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6d6254"/></marker>
+  <style>
+    .lot { fill:#f7f2e6; stroke:#4a443b; stroke-width:2; }
+    .yard { fill:#f2eddf; }
+    .bldg { fill:#d8d3c5; stroke:#3f3b34; stroke-width:1.4; }
+    .bldg-roof { fill:url(#tile); stroke:#3f3b34; stroke-width:1.2; }
+    .gate { fill:#c9ab8f; stroke:#3f3b34; stroke-width:1.6; }
+    .corr { fill:#e4d5bc; stroke:#8f7d62; stroke-width:0.9; }
+    .pave { fill:url(#path); stroke:#bcae94; stroke-width:0.7; }
+    .wall { fill:#8d8679; stroke:#3f3b34; stroke-width:0.8; }
+    .tree { fill:#7d9073; stroke:#4f6249; stroke-width:1; opacity:0.9; }
+    .water { fill:#9fb9b2; stroke:#5f7d77; stroke-width:1; }
+    .stone { fill:#c9c3b4; stroke:#7d7568; stroke-width:1; }
+    .lbl { fill:#2d2a25; font-size:13px; font-weight:600; }
+    .lbl-s { fill:#544d42; font-size:11px; }
+    .lbl-w { fill:#fffdf6; font-size:12px; font-weight:600; }
+    .dim { stroke:#6d6254; stroke-width:1; fill:none; }
+    .dimt { fill:#5a5043; font-size:12px; }
+    .axis { stroke:#a64b36; stroke-width:1.2; stroke-dasharray:7 5; opacity:0.7; }
+    .note { fill:#6a6052; font-size:11px; }
+    .title { fill:#2d2a25; font-size:22px; font-weight:700; letter-spacing:2px; }
+    .sub { fill:#6a6052; font-size:12px; letter-spacing:1px; }
+  </style>
+</defs>
+<rect width="700" height="1260" fill="#fbf8f0"/>
+<text x="100" y="42" class="title">京华三进 · 总平面示意</text>
+<text x="100" y="62" class="sub">清中晚期北京官宦宅第原型　基地 26 m × 56 m　上北下南</text>
+
+<rect x="100.0" y="90.0" width="468.0" height="1008.0" class="lot" />
+<rect x="107.2" y="993.6" width="453.6" height="97.2" class="yard" />
+<rect x="107.2" y="824.4" width="453.6" height="169.2" class="yard" />
+<rect x="107.2" y="424.8" width="453.6" height="399.6" class="yard" />
+<rect x="107.2" y="295.2" width="453.6" height="129.6" class="yard" />
+<rect x="107.2" y="172.8" width="453.6" height="122.4" class="yard" />
+<rect x="107.2" y="97.2" width="453.6" height="75.6" class="yard" />
+<rect x="125.2" y="993.6" width="297.0" height="90.0" class="bldg-roof" />
+<rect x="452.8" y="993.6" width="57.6" height="90.0" class="gate" />
+<rect x="118.0" y="464.4" width="91.8" height="172.8" class="bldg-roof" />
+<rect x="454.6" y="464.4" width="95.4" height="172.8" class="bldg-roof" />
+<rect x="182.8" y="295.2" width="302.4" height="129.6" class="bldg-roof" />
+<rect x="139.6" y="295.2" width="43.2" height="90.0" class="bldg" />
+<rect x="485.2" y="295.2" width="43.2" height="90.0" class="bldg" />
+<rect x="138.7" y="97.2" width="390.6" height="75.6" class="bldg-roof" />
+<rect x="305.2" y="752.4" width="57.6" height="72.0" class="gate" />
+<rect x="451.0" y="963.0" width="64.8" height="9.0" class="wall" />
+<rect x="209.8" y="424.8" width="27.0" height="327.6" class="corr" />
+<rect x="427.6" y="424.8" width="27.0" height="327.6" class="corr" />
+<rect x="236.8" y="725.4" width="68.4" height="27.0" class="corr" />
+<rect x="362.8" y="725.4" width="64.8" height="27.0" class="corr" />
+<rect x="235.0" y="424.8" width="198.0" height="32.4" class="bldg" />
+<rect x="314.2" y="457.2" width="39.6" height="295.2" class="pave" />
+<rect x="236.8" y="532.8" width="194.4" height="36.0" class="pave" />
+<rect x="143.2" y="982.8" width="64.8" height="10.8" class="wall" />
+<rect x="510.4" y="982.8" width="50.4" height="10.8" class="wall" />
+<circle cx="267.4" cy="590.4" r="17" class="tree"/><circle cx="267.4" cy="590.4" r="3" fill="#4f6249"/>
+<circle cx="404.2" cy="590.4" r="15" class="tree"/><circle cx="404.2" cy="590.4" r="3" fill="#4f6249"/>
+<circle cx="334.0" cy="241.2" r="17" class="tree"/><circle cx="334.0" cy="241.2" r="3" fill="#4f6249"/>
+<circle cx="278.2" cy="507.6" r="9" class="water"/>
+<circle cx="395.2" cy="498.6" r="8" class="stone"/>
+<line x1="334" y1="1090.8000000000002" x2="334" y2="97.19999999999997" class="axis"/>
+<text x="273.7" y="1040.4" text-anchor="middle" class="lbl" font-size="13">倒座房</text>
+<text x="481.6" y="1035.0" text-anchor="middle" class="lbl-w" font-size="12">大门</text>
+<text x="483.4" y="955.8" text-anchor="middle" class="lbl" font-size="11">影壁</text>
+<text x="334.0" y="784.8" text-anchor="middle" class="lbl-w" font-size="11">垂花门</text>
+<text x="244.0" y="703.8" text-anchor="middle" class="lbl" font-size="10">抄手游廊</text>
+<text x="334.0" y="361.8" text-anchor="middle" class="lbl" font-size="16">正 房</text>
+<text x="161.2" y="338.4" text-anchor="middle" class="lbl" font-size="10">耳房</text>
+<text x="506.8" y="338.4" text-anchor="middle" class="lbl" font-size="10">耳房</text>
+<text x="163.9" y="550.8" text-anchor="middle" class="lbl" font-size="11">西厢房</text>
+<text x="502.3" y="550.8" text-anchor="middle" class="lbl" font-size="11">东厢房</text>
+<text x="334.0" y="133.2" text-anchor="middle" class="lbl" font-size="15">后 罩 房</text>
+<text x="334.0" y="441.0" text-anchor="middle" class="lbl" font-size="10">月台</text>
+<text x="251.2" y="914.4" text-anchor="middle" class="lbl" font-size="12">一进院（外院）</text>
+<text x="334.0" y="675.0" text-anchor="middle" class="lbl" font-size="12">二进院（内院）</text>
+<text x="334.0" y="226.8" text-anchor="middle" class="lbl" font-size="12">三进院（后院）</text>
+<text x="334.0" y="612.0" text-anchor="middle" class="lbl-s" font-size="10">十 字 甬 路</text>
+<line x1="100" y1="1126.8" x2="568" y2="1126.8" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="334.0" y="1135.8" text-anchor="middle" class="dimt" font-size="12">26.0 m</text>
+<line x1="71.2" y1="1098" x2="71.2" y2="90" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<text x="62.2" y="594.0" text-anchor="middle" transform="rotate(-90 62.2 594.0)" class="dimt" font-size="12">56.0 m</text>
+<g transform="translate(636,110)"><path d="M0 34L0 -14M0 -14L-8 2M0 -14L8 2" stroke="#4a443b" stroke-width="1.5" fill="none"/><text x="0" y="52" text-anchor="middle" class="lbl" font-size="13">北</text></g>
+<text x="100" y="1200" class="lbl" font-size="12">图例</text>
+<rect x="148" y="1189" width="18" height="12" fill="#d8d3c5" stroke="#3f3b34" stroke-width="1"/><text x="171" y="1200" class="note">建筑</text>
+<rect x="240" y="1189" width="18" height="12" fill="#e4d5bc" stroke="#8f7d62" stroke-width="1"/><text x="263" y="1200" class="note">游廊</text>
+<rect x="322" y="1189" width="18" height="12" fill="#efe9d8" stroke="#bcae94" stroke-width="1"/><text x="345" y="1200" class="note">甬路</text>
+<rect x="404" y="1189" width="18" height="12" fill="#8d8679" stroke="#3f3b34" stroke-width="1"/><text x="427" y="1200" class="note">院墙/影壁</text>
+<rect x="522" y="1189" width="18" height="12" fill="#7d9073" stroke="#4f6249" stroke-width="1"/><text x="545" y="1200" class="note">树木</text>
+<text x="100" y="1232" class="note">注：本图为方案示意图，非施工图；开间、进深、台基与檐口高度见设计规范表。</text>
+</svg>

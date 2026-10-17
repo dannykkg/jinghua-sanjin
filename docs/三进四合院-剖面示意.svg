@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="430" viewBox="0 0 1000 430" font-family="Songti SC, Noto Serif SC, SimSun, serif">
+<defs>
+  <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#6d6254"/></marker>
+  <style>
+    .s { fill:#6a6052; font-size:11px; }
+    .dim { stroke:#6d6254; stroke-width:1; fill:none; }
+    .ground { stroke:#4a443b; stroke-width:2; }
+    .axis { stroke:#a64b36; stroke-width:1; stroke-dasharray:6 5; }
+  </style>
+</defs>
+<rect width="1000" height="430" fill="#fbf8f0"/>
+<text x="80" y="34" fill="#2d2a25" font-size="21" font-weight="700" letter-spacing="2">京华三进 · 南北向剖面示意</text>
+<text x="80" y="55" class="s">沿中轴 A–A（倒座房—垂花门—正房—后罩房）　高度单位：米　非施工图</text>
+
+<line x1="80.0" y1="350" x2="948.0" y2="350" class="ground"/>
+<rect x="80.0" y="350" width="868.0" height="10" fill="#d8d0bf" opacity="0.7"/>
+<rect x="169.9" y="348" width="145.7" height="4" fill="#c7bda9" opacity="0.7"/>
+<rect x="377.6" y="348" width="282.1" height="4" fill="#c7bda9" opacity="0.7"/>
+<rect x="771.3" y="348" width="105.4" height="4" fill="#c7bda9" opacity="0.7"/>
+
+  <rect x="92.4" y="342.4" width="77.5" height="7.6" fill="#b9b1a0" stroke="#4a443b" stroke-width="1.2"/>
+  <rect x="92.4" y="230.3" width="77.5" height="112.1" fill="#e8e1d1" stroke="#4a443b" stroke-width="1.2"/>
+  <path d="M85.4 230.3 L131.1 179.0 L176.9 230.3 L176.9 239.3 L85.4 239.3 Z" fill="#cbd0ca" stroke="#3f3b34" stroke-width="1.3"/>
+  <line x1="85.4" y1="239.3" x2="85.4" y2="245.3" stroke="#3f3b34" stroke-width="1"/>
+  <line x1="176.9" y1="239.3" x2="176.9" y2="245.3" stroke="#3f3b34" stroke-width="1"/>
+  <text x="131.1" y="170.0" text-anchor="middle" font-size="13" font-weight="600" fill="#2d2a25">倒座房</text>
+  <text x="182.9" y="183.0" font-size="10" fill="#6a6052">4.50 m</text>
+
+
+  <rect x="315.6" y="332.9" width="62.0" height="17.1" fill="#b9b1a0" stroke="#4a443b" stroke-width="1.2"/>
+  <rect x="315.6" y="215.1" width="62.0" height="117.8" fill="#e8e1d1" stroke="#4a443b" stroke-width="1.2"/>
+  <path d="M308.6 215.1 L346.6 163.8 L384.6 215.1 L384.6 224.1 L308.6 224.1 Z" fill="#cbd0ca" stroke="#3f3b34" stroke-width="1.3"/>
+  <line x1="308.6" y1="224.1" x2="308.6" y2="230.1" stroke="#3f3b34" stroke-width="1"/>
+  <line x1="384.6" y1="224.1" x2="384.6" y2="230.1" stroke="#3f3b34" stroke-width="1"/>
+  <text x="346.6" y="154.8" text-anchor="middle" font-size="13" font-weight="600" fill="#2d2a25">垂花门</text>
+  <text x="390.6" y="167.8" font-size="10" fill="#6a6052">4.90 m</text>
+
+
+  <rect x="659.7" y="327.2" width="111.6" height="22.8" fill="#b9b1a0" stroke="#4a443b" stroke-width="1.2"/>
+  <rect x="659.7" y="196.1" width="111.6" height="131.1" fill="#e8e1d1" stroke="#4a443b" stroke-width="1.2"/>
+  <path d="M652.7 196.1 L715.5 120.1 L778.3 196.1 L778.3 205.1 L652.7 205.1 Z" fill="#cbd0ca" stroke="#3f3b34" stroke-width="1.3"/>
+  <line x1="652.7" y1="205.1" x2="652.7" y2="211.1" stroke="#3f3b34" stroke-width="1"/>
+  <line x1="778.3" y1="205.1" x2="778.3" y2="211.1" stroke="#3f3b34" stroke-width="1"/>
+  <text x="715.5" y="111.1" text-anchor="middle" font-size="13" font-weight="600" fill="#2d2a25">正房</text>
+  <text x="784.3" y="124.1" font-size="10" fill="#6a6052">6.05 m</text>
+
+
+  <rect x="876.7" y="332.9" width="65.1" height="17.1" fill="#b9b1a0" stroke="#4a443b" stroke-width="1.2"/>
+  <rect x="876.7" y="224.6" width="65.1" height="108.3" fill="#e8e1d1" stroke="#4a443b" stroke-width="1.2"/>
+  <path d="M869.7 224.6 L909.2 171.4 L948.8 224.6 L948.8 233.6 L869.7 233.6 Z" fill="#cbd0ca" stroke="#3f3b34" stroke-width="1.3"/>
+  <line x1="869.7" y1="233.6" x2="869.7" y2="239.6" stroke="#3f3b34" stroke-width="1"/>
+  <line x1="948.8" y1="233.6" x2="948.8" y2="239.6" stroke="#3f3b34" stroke-width="1"/>
+  <text x="909.2" y="162.4" text-anchor="middle" font-size="13" font-weight="600" fill="#2d2a25">后罩房</text>
+  <text x="954.8" y="175.4" font-size="10" fill="#6a6052">4.70 m</text>
+
+<line x1="80.0" y1="373" x2="948.0" y2="373" class="axis" marker-end="url(#arrow)"/>
+<text x="84.0" y="392" class="s">南</text><text x="928.0" y="392" class="s">北</text>
+<text x="241.2" y="335" text-anchor="middle" class="s">一进院</text>
+<text x="518.7" y="335" text-anchor="middle" class="s">二进院</text>
+<text x="824.0" y="335" text-anchor="middle" class="s">三进院</text>
+<line x1="30.4" y1="350.0" x2="30.4" y2="120.1" class="dim" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+<line x1="22.6" y1="350.0" x2="38.1" y2="350.0" stroke="#6d6254" stroke-width="1"/>
+<text x="18.0" y="354.0" text-anchor="end" class="s">0.0</text>
+<line x1="22.6" y1="274.0" x2="38.1" y2="274.0" stroke="#6d6254" stroke-width="1"/>
+<text x="18.0" y="278.0" text-anchor="end" class="s">2.0</text>
+<line x1="22.6" y1="198.0" x2="38.1" y2="198.0" stroke="#6d6254" stroke-width="1"/>
+<text x="18.0" y="202.0" text-anchor="end" class="s">4.0</text>
+<line x1="22.6" y1="122.0" x2="38.1" y2="122.0" stroke="#6d6254" stroke-width="1"/>
+<text x="18.0" y="126.0" text-anchor="end" class="s">6.0</text>
+<text x="8.7" y="232.2" text-anchor="middle" transform="rotate(-90 8.7 232.2)" class="s">高度 / m</text>
+<g stroke="#7b5c4b" stroke-width="1.4" fill="none"><circle cx="545.0" cy="290.4" r="4"/><line x1="545.0" y1="297.4" x2="545.0" y2="319.6"/><line x1="545.0" y1="319.6" x2="539.0" y2="350.0"/><line x1="545.0" y1="319.6" x2="551.0" y2="350.0"/><line x1="545.0" y1="298.7" x2="538.0" y2="313.9"/><line x1="545.0" y1="298.7" x2="552.0" y2="313.9"/></g>
+<text x="557.0" y="340.0" class="s">1.7 m 人视高</text>
+<text x="80" y="410" class="s">注：宅门位于院落东南角，不在中轴剖面内；台基、檐口、脊高为方案设计值，开间与形式依据《北京老城保护房屋修缮技术导则（2019版）》。</text>
+</svg>
