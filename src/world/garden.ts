@@ -34,6 +34,16 @@ export function createPaving(ctx: WorldContext): void {
     box(p.x2 - p.x1, 0.018, p.z2 - p.z1, pathMat, (p.x1 + p.x2) / 2, 0.002, (p.z1 + p.z2) / 2, ctx.architecture, false, true);
   }
 
+  // Narrow drainage aprons between the wing gables and the party walls.
+  // These are 散水, not passages: stone strip + collider, no walking.
+  for (const gap of [
+    { x1: 0.4, x2: 1.0 },
+    { x1: 25.0, x2: 25.6 },
+  ]) {
+    plane(gap.x2 - gap.x1, 9.6, ctx.mats.stone, (gap.x1 + gap.x2) / 2, 0.018, 30.4, -Math.PI / 2, 0, 0, ctx.architecture);
+    ctx.addCollider(gap.x1, 25.6, gap.x2, 35.2);
+  }
+
   // 月台
   const t = TERRACE;
   box(t.x2 - t.x1, t.height, t.z2 - t.z1, ctx.mats.stone, (t.x1 + t.x2) / 2, 0, (t.z1 + t.z2) / 2, ctx.architecture, false, true);

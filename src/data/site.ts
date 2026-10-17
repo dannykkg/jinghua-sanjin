@@ -34,7 +34,7 @@ export const MAIN_HALL: HallSpec = {
 };
 
 export const SOUTH_HALL: HallSpec = {
-  id: 'southHall', name: '倒座房', x1: 1.4, x2: 17.9, z1: 0.8, z2: 5.8,
+  id: 'southHall', name: '倒座房', x1: 1.4, x2: 17.9, z1: 0.4, z2: 5.4,
   platform: 0.20, eave: 3.15, ridge: 4.50,
   bays: [3.3, 3.3, 3.3, 3.3, 3.3], facade: 'north', porch: 0, doorBay: 2,
   roofAxis: 'x', interior: 'southHall',
