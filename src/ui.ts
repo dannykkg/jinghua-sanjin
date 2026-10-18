@@ -1,4 +1,4 @@
-import { GATE, GATE_HOUSE, HALLS, HOTSPOTS, SCREEN_WALL, TERRACE } from './data/site';
+import { GATE, GATE_HOUSE, HALLS, HOTSPOTS, MAP_BOUNDS, SCREEN_WALL, TERRACE, WEST_GARDEN } from './data/site';
 
 export type Mode = 'panorama' | 'walk' | 'orbit';
 
@@ -191,20 +191,33 @@ export class UI {
     const W = c.width;
     const H = c.height;
     const pad = 12;
-    const sx = (W - pad * 2) / 26;
-    const sz = (H - pad * 2) / 56;
+    const minX = MAP_BOUNDS.minX;
+    const maxX = MAP_BOUNDS.maxX;
+    const minZ = MAP_BOUNDS.minZ;
+    const maxZ = MAP_BOUNDS.maxZ;
+    const mapW = maxX - minX;
+    const mapH = maxZ - minZ;
+    const sx = (W - pad * 2) / mapW;
+    const sz = (H - pad * 2) / mapH;
     const s = Math.min(sx, sz);
-    const ox = pad + (W - pad * 2 - 26 * s) / 2;
-    const oz = pad + (H - pad * 2 - 56 * s) / 2;
-    const mx = (xx: number) => ox + xx * s;
-    const mz = (zz: number) => oz + (56 - zz) * s;
+    const ox = pad + (W - pad * 2 - mapW * s) / 2;
+    const oz = pad + (H - pad * 2 - mapH * s) / 2;
+    const mx = (xx: number) => ox + (xx - minX) * s;
+    const mz = (zz: number) => oz + (maxZ - zz) * s;
 
     ctx.clearRect(0, 0, W, H);
+    // main courtyard
     ctx.fillStyle = 'rgba(239,233,218,.85)';
     ctx.fillRect(mx(0), mz(56), 26 * s, 56 * s);
     ctx.strokeStyle = 'rgba(52,47,39,.5)';
     ctx.lineWidth = 1;
     ctx.strokeRect(mx(0), mz(56), 26 * s, 56 * s);
+    // west cross-court garden
+    ctx.fillStyle = 'rgba(211,219,201,.9)';
+    const gw = WEST_GARDEN.x2 - WEST_GARDEN.x1;
+    const gd = WEST_GARDEN.z2 - WEST_GARDEN.z1;
+    ctx.fillRect(mx(WEST_GARDEN.x1), mz(WEST_GARDEN.z2), gw * s, gd * s);
+    ctx.strokeRect(mx(WEST_GARDEN.x1), mz(WEST_GARDEN.z2), gw * s, gd * s);
 
     const rect = (x1: number, z1: number, x2: number, z2: number, fill: string, stroke: string) => {
       ctx.fillStyle = fill;
@@ -224,6 +237,12 @@ export class UI {
     ctx.fillStyle = 'rgba(224,213,190,.95)';
     ctx.fillRect(mx(11.9), mz(35.4), 2.2 * s, (35.4 - 19.2) * s);
     ctx.fillRect(mx(7.6), mz(31.4), (18.4 - 7.6) * s, 2 * s);
+
+    // west garden: pond and pavilion
+    ctx.fillStyle = 'rgba(87,128,122,.9)';
+    ctx.fillRect(mx(-6.2), mz(29), 3 * s, 3.1 * s);
+    ctx.fillStyle = 'rgba(197,190,174,.95)';
+    ctx.fillRect(mx(-6.15), mz(35.9), 2.7 * s, 2.7 * s);
 
     // player
     const px = mx(x);

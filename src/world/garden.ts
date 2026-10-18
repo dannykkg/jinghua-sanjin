@@ -69,7 +69,7 @@ export function createPaving(ctx: WorldContext): void {
 
 interface BranchTip { p: THREE.Vector3; n: THREE.Vector3; }
 
-function buildTree(ctx: WorldContext, x: number, z: number, kind: 'crabapple' | 'pomegranate' | 'jujube'): void {
+export function buildTree(ctx: WorldContext, x: number, z: number, kind: 'crabapple' | 'pomegranate' | 'jujube'): void {
   const rand = rng(kind === 'crabapple' ? 501 : kind === 'pomegranate' ? 502 : 503);
   const g = new THREE.Group();
   g.position.set(x, 0, z);

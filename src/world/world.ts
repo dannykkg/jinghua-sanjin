@@ -5,7 +5,8 @@ import { createHall } from './halls';
 import { createGate, createGateHouse, createScreenWall } from './gate';
 import { createCorridors } from './corridor';
 import { createGarden, createPaving } from './garden';
-import { HALLS, SITE } from '../data/site';
+import { createWestGarden } from './gardenWest';
+import { HALLS, SITE, WEST_GARDEN } from '../data/site';
 import { box } from '../lib/geom';
 import { optimizeStatic } from './optimize';
 
@@ -28,7 +29,9 @@ function createWalls(ctx: WorldContext): void {
   wall(ctx, 22.8, 0, 26, 0.4);
   // east, west, north
   wall(ctx, 25.6, 0.4, 26, 55.6);
-  wall(ctx, 0, 0.4, 0.4, 55.6);
+  // The west wall is split by the moon gate to the west garden.
+  wall(ctx, 0, 0.4, 0.4, WEST_GARDEN.gateZ1);
+  wall(ctx, 0, WEST_GARDEN.gateZ2, 0.4, 55.6);
   wall(ctx, 0.4, 55.6, 25.6, 56);
 
   // 看面墙: closes the south side of the inner courtyard, with the 垂花门 in the middle
@@ -58,6 +61,7 @@ export function buildWorld(scene: THREE.Scene, mats: Materials): BuiltWorld {
   createScreenWall(ctx);
   createCorridors(ctx);
   createGarden(ctx);
+  createWestGarden(ctx);
 
   // Batch the hundreds of small static meshes before the scene is mirrored.
   optimizeStatic(ctx);

@@ -86,6 +86,11 @@ export const CORRIDORS = [
 
 export const TERRACE = { x1: 6.1, x2: 19.7, z1: 35.2, z2: 37.4, height: 0.60 };
 
+// West side garden: a separate 8 x 18 m cross-court, entered through a moon gate
+// in the existing west wall. Negative X keeps the original courtyard coordinates intact.
+export const WEST_GARDEN = { x1: -8, x2: 0, z1: 0.4, z2: 55.6, gateZ1: 21.3, gateZ2: 22.9 };
+export const MAP_BOUNDS = { minX: WEST_GARDEN.x1, maxX: 26, minZ: 0, maxZ: 56 };
+
 export const PATHS = {
   main: { x1: 11.9, x2: 14.1, z1: 19.2, z2: 35.2 },
   cross: { x1: 7.6, x2: 18.4, z1: 29.4, z2: 31.4 },
@@ -133,6 +138,13 @@ export const HOTSPOTS = [
     title: '庭院深深',
     text: '垂花门以内豁然开朗。正房五间高居北端，东西厢房各三间，抄手游廊环抱；十字甬路把院子分成四块，海棠、石榴、鱼缸各得其所。',
     facts: ['正房五间 · 厢房三间', '抄手游廊 · 卷棚顶', '游廊端部留口 · 可入廊后小院', '海棠 / 石榴 / 鱼缸'],
+  },
+  {
+    id: 'westGarden', name: '西花园', kicker: '跨院 · 池石',
+    x: -3.55, y: 1.72, z: 22.7, yaw: Math.PI, pitch: 0.02,
+    title: '西园小景',
+    text: '西侧跨院，与主院以月洞门相隔。池、石、竹、亭收紧在一方小院里，借粉墙与漏窗成景；它不是第四进，而是三进宅第旁的附属花园。',
+    facts: ['西跨院 8 × 55.2 m', '前园 / 中园 / 后园', '鱼池 · 叠石 · 小亭'],
   },
   {
     id: 'terrace', name: '月台', kicker: '正房 · 台基',
@@ -189,6 +201,7 @@ export const ROOM_LABELS: { text: string; x: number; y: number; z: number; kind?
   { text: '二进院', x: 13, y: 0.2, z: 23.2, kind: 'minor' },
   { text: '正房', x: 13, y: 4.6, z: 41.0, kind: 'major' },
   { text: '月台', x: 13, y: 0.8, z: 36.3, kind: 'minor' },
+  { text: '西花园', x: -4.6, y: 0.8, z: 30.0, kind: 'minor' },
   { text: '侧夹道', x: 1.3, y: 0.25, z: 40.8, kind: 'minor' },
   { text: '侧夹道', x: 24.7, y: 0.25, z: 40.8, kind: 'minor' },
   { text: '西厢房', x: 3.5, y: 3.2, z: 30.4, kind: 'minor' },
